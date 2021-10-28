@@ -92,34 +92,4 @@ btnHold.addEventListener('click', function () {
 
 btnNew.addEventListener('click', init);
 
-/*
-function toCamelCase(str) {
-  let newString = '';
 
-  if (!str) {
-    newString = '';
-  } else {
-    newString += str[0];
-  }
-
-  if (str) {
-    for (let i = 1; i < str.length; i++)
-      if (str[i] !== '-' && str[i] !== '_') {
-        if (str[i - 1] === '-' || str[i - 1] === '_')
-          newString += str[i].toUpperCase();
-        else newString += str[i];
-      } else {
-        // newString += str[i + 1].toUpperCase();
-        continue;
-      }
-  } else newString = '';
-
-  return newString;
-}
-console.log(toCamelCase('the_stealth_warrior'));
-*/
-
-function toCamelCase1(str) {
-  return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
-}
-console.log(toCamelCase1('the_stealth_warrior'));
